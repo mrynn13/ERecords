@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:id="@+id/eventNameDisplay"/>
+
+        <TextView
+            android:layout_toLeftOf="@+id/delEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="9/9/9999"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/eventDateDisplay"/>
+
+        <ImageView
+            android:id="@+id/delEvent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+          android:background="@drawable/custom_trash"
+            android:src="@drawable/ic_trash"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

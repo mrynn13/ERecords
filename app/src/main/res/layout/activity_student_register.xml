@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegister"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+       android:layout_marginTop="50dp"
+        android:alpha=".9"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/myicon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/layout_white2"
+        android:transitionName="linearTransition"
+        android:background="@drawable/rounded_corners"
+        android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome to"
+                android:id="@+id/welcome_tv"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#757575"
+                android:fontFamily="@font/custom_poppins" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/welcome_tv"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/custom_poppins"
+                android:text="E - Records"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textview_id"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/custom_poppins"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="LRN No."
+                android:textColor="#ff444040"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/id_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:elevation="3dp"
+                android:hint=""
+                android:drawableStart="@drawable/ic_con"
+                android:inputType="phone"
+                android:background="@drawable/thin_bg_v4"
+                android:layout_toRightOf="@id/textview_id"
+                android:drawableLeft="@drawable/ic_email"
+                android:paddingLeft="5dp" />
+
+
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_id"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Name:"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/textview_name"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#ff444040"
+                android:fontFamily="@font/custom_poppins"/>
+
+            <EditText
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:layout_below="@id/id_et"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/textview_password"
+                android:background="@drawable/thin_bg_v4"
+                android:drawableLeft="@drawable/ic_person"
+                android:elevation="6dp"
+                android:hint="Juan Dela Cruz"
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_invisible"
+                android:layout_below="@+id/name_et"
+                android:layout_alignParentRight="true"
+                android:translationZ="90dp"
+                android:id="@+id/show_pass_btn"
+                android:onClick="ShowHidePass"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="23dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_name"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="Password"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/textview_password"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#ff444040"
+                android:fontFamily="@font/custom_poppins"/>
+
+            <EditText
+                android:id="@+id/pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:layout_below="@id/name_et"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/textview_password"
+                android:background="@drawable/thin_bg_v4"
+                android:drawableLeft="@drawable/ic_key"
+                android:elevation="6dp"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp" />
+
+
+
+
+            <Button
+                android:layout_below="@+id/pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/proceed_btn"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_btn_bg"
+                app:backgroundTint="@null"
+                android:gravity="center"
+                android:fontFamily="@font/custom_poppins"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:id="@+id/sign_up"
+            android:layout_below="@id/sign_up_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:fontFamily="@font/custom_poppins"
+                android:text="Have an account already?"
+                android:id="@+id/no_account_tv" />
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/s_login_text_link"
+                android:text="Login"
+                android:fontFamily="@font/custom_poppins"
+                android:layout_toRightOf="@id/no_account_tv"
+                android:textColor="#64b5f6"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

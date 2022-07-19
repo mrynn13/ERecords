@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_bg_thin_v2"
+        android:id="@+id/subject_img_container">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_subject"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_rounded_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="Join Class"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_thin"
+        android:layout_below="@+id/subject_img_container"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/room_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/thin_bg_v4"
+            android:elevation="3dp"
+            android:fontFamily="@font/custom_poppins"
+            android:hint="Instructor's Code here"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textColorHint="#757575"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/room_code"
+            android:paddingTop="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/join_cancel_btn"
+                android:textSize="10sp"
+                android:background="@drawable/custom_btn_bg_thin_cancel"
+                android:textColor="#d32f2f"
+                android:textStyle="bold"
+                android:fontFamily="@font/custom_poppins"
+                app:backgroundTint="@null"
+                android:text="Cancel" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/join_save_btn"
+                    android:textSize="10sp"
+                    android:background="@drawable/custom_btn_bg_thin_save"
+                    app:backgroundTint="@null"
+                    android:textColor="#00c853"
+                    android:fontFamily="@font/custom_poppins"
+                    android:textStyle="bold"
+                    android:text="Join"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/scan_qr"
+                    android:background="@drawable/custom_btn_bg_thin_save"
+                    app:backgroundTint="@null"
+                    android:textColor="#00c853"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/custom_poppins"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:text="Scan QR" />
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

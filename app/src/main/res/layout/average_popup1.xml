@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+      
+        <androidx.cardview.widget.CardView
+           android:id="@+id/cv"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="left"
+                        android:text="Define below the total count of each column that you have given to your students."
+                        android:textColor="@color/white"
+                        android:background="#1d88e5"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:background="#1d88e5"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Prelim"
+                        android:textColor="@color/black"
+                        android:background="#e3f3fd"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Midterm"
+                        android:textColor="@color/black"
+                        android:background="#e3f3fd"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Finals"
+                        android:textColor="@color/black"
+                        android:background="#e3f3fd"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Activities"
+                        android:textColor="@color/black"
+                        android:background="#ffecb3"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <EditText
+                        android:id="@+id/ptotal_act"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <EditText
+                        android:id="@+id/mtotal_act"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <EditText
+                        android:id="@+id/ftotal_act"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Assignments"
+                        android:textColor="@color/black"
+                        android:background="#ffecb3"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <EditText
+                        android:id="@+id/ptotal_ass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <EditText
+                        android:id="@+id/mtotal_ass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <EditText
+                        android:id="@+id/ftotal_ass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Quizzes"
+                        android:textColor="@color/black"
+                        android:background="#ffecb3"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <EditText
+                        android:id="@+id/ptotal_q"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <EditText
+                        android:id="@+id/mtotal_q"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/custom_poppins"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/ftotal_q"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Exams/Lab"
+                        android:textColor="@color/black"
+                        android:background="#ffecb3"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+                    <EditText
+                        android:id="@+id/ptotal_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <EditText
+                        android:id="@+id/mtotal_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <EditText
+                        android:id="@+id/ftotal_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text=""
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                </TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastrow"
+                    android:id="@+id/add_now_btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="OK"/>
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>

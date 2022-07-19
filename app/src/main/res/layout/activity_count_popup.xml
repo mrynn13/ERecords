@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="#ab40b0e2"
+    android:gravity="center">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Please Define below the total count of each column\n that you have given to your students on this subject."
+            android:textColor="@color/white"
+            android:background="#d32f2f"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Prelim"
+            android:textColor="@color/black"
+            android:background="#ffca28"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom_poppins"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Activities"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Assignments"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Quizzes"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Exams/Laboratory"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ptotal_act"
+                        android:hint=""/>
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ptotal_ass"
+                        android:hint=""/>
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ptotal_q"
+                        android:hint=""/>
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ptotal_ex"
+                        android:hint=""/>
+
+                </TableRow>
+                </TableLayout>
+
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Midterm"
+            android:textColor="@color/black"
+            android:background="#ffca28"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom_poppins"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Activities"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Assignments"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Quizzes"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Exams/Laboratory"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/mtotal_act"
+                        android:hint=""/>
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/mtotal_ass"
+                        android:hint=""/>
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/mtotal_q"
+                        android:hint=""/>
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/mtotal_ex"
+                        android:hint=""/>
+
+                </TableRow>
+            </TableLayout>
+
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Finals"
+            android:textColor="@color/black"
+            android:background="#ffca28"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom_poppins"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Activities"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Assignments"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Quizzes"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Exams/Laboratory"
+                        android:textColor="@color/black"
+                        android:background="#fafafa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/custom_poppins"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ftotal_act"
+                        android:hint=""/>
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ftotal_ass"
+                        android:hint=""/>
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ftotal_q"
+                        android:hint=""/>
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ftotal_ex"
+                        android:hint=""/>
+
+                </TableRow>
+            </TableLayout>
+  </HorizontalScrollView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/add_now_btn"
+            app:backgroundTint="@null"
+            android:background="#00c853"
+            android:text="Add now"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/later_btn"
+            app:backgroundTint="@null"
+            android:background="#f44235"
+            android:text="Add Later"/>
+    </LinearLayout>
+    
+
+
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:onClick="ClickArea"
+        android:background="@drawable/main_bg">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/myicon"
+            android:cropToPadding="true"
+            android:background="@drawable/shape_circle"/>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/red_bg"
+                android:text="E- Records"
+                android:elevation="6dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/custom_poppins"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id No.:"
+            android:fontFamily="@font/custom_poppins"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/retrieve_idnum"
+            android:text="20190000"
+            android:fontFamily="@font/custom_poppins"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:onClick="ClickCal"
+        android:id="@+id/calendar">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/custom_poppins"
+            android:text="Calendar"
+            android:padding="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            android:layout_marginEnd="50dp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="ClickAbout"
+        android:gravity="center"
+        android:id="@+id/about"
+        tools:ignore="InvalidId">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/custom_poppins"
+            android:text="About"
+            android:padding="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_about"
+            android:layout_marginEnd="50dp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="ClickLogout"
+        android:gravity="center"
+        android:id="@+id/logout"
+        tools:ignore="InvalidId">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/custom_poppins"
+            android:text="Exit"
+            android:padding="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout"
+            android:layout_marginEnd="50dp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

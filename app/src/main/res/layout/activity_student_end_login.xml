@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentEndLogin"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:alpha=".9"
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/myicon" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/layout_white"
+        android:transitionName="linearTransition"
+        android:background="@drawable/rounded_corners"
+        android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome to"
+                android:id="@+id/welcome_tv"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#757575"
+                android:fontFamily="@font/custom_poppins" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:background="@drawable/red_bg"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/welcome_tv"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:fontFamily="@font/custom_poppins"
+                android:text="E - Records"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+
+            <TextView
+                android:id="@+id/textview_idnum"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textview_id"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/custom_poppins"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="LRN No.:"
+                android:textColor="#ff444040"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/student_idnum_login_et"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/custom_poppins"
+                android:layout_height="55dp"
+                android:hint=""
+                android:textSize="13sp"
+                android:elevation="6dp"
+                android:drawablePadding="5dp"
+                android:inputType="phone"
+                android:background="@drawable/thin_bg_v4"
+                android:layout_toRightOf="@id/textview_password"
+                android:drawableLeft="@drawable/ic_con"
+                android:paddingLeft="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_invisible"
+                android:layout_below="@+id/student_idnum_login_et"
+                android:layout_alignParentRight="true"
+                android:translationZ="90dp"
+                android:id="@+id/show_pass_btn"
+                android:onClick="ShowHidePass"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="23dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_idnum"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Password"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/textview_password"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#ff444040"
+                android:fontFamily="@font/custom_poppins"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/student_idnum_login_et"
+                android:id="@+id/student_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:elevation="6dp"
+                android:drawablePadding="5dp"
+                android:inputType="textPassword"
+                android:background="@drawable/thin_bg_v4"
+                android:layout_toRightOf="@id/textview_password"
+                android:drawableLeft="@drawable/ic_key"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:layout_below="@+id/student_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="login"
+                android:id="@+id/login_btn"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_btn_bg"
+                app:backgroundTint="@null"
+                android:gravity="center"
+                android:fontFamily="@font/custom_poppins"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/sign_up"
+                android:layout_below="@id/login_btn">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="No Account?"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/custom_poppins"
+                    android:id="@+id/no_account_tv" />
+                <TextView
+                    android:padding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Register"
+                    android:fontFamily="@font/custom_poppins"
+                    android:id="@+id/sign_up_link"
+                    android:layout_toRightOf="@id/no_account_tv"
+                    android:textColor="#64b5f6"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:background="@drawable/thin_bg_v3"
+    app:cardElevation="1dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thin_bg_v4"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="#ef534f"
+            android:id="@+id/indicator_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:padding="10dp"
+                android:id="@+id/class_clck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/student_name_display"
+                        android:fontFamily="@font/custom_poppins"
+                        android:text="Sherwin Comesario"
+                        android:textSize="15sp"
+                        android:textColor="#757575"/>
+                    <RelativeLayout
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <ImageButton
+                            android:id="@+id/message_btn"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@null"
+                            android:src="@drawable/ic_message" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/student_id_display"
+                        android:text="20190858"
+                        android:fontFamily="@font/custom_poppins"
+                        android:textSize="15sp"
+                        android:textColor="#757575"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="bottom"
+                android:paddingTop="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actCount"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/preL">
+                            <View
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/prelimIndicator"
+                                android:background="#ef534f"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/custom_poppins"
+                                android:text="Prelim Accomplishment: "
+                                android:textSize="10sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/prelimIndicator"
+                                android:id="@+id/preCountTv"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_below="@+id/preL"
+                            android:id="@+id/midL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/prelimIndicator"
+                                android:id="@+id/midtermIndicator"
+                                android:background="#ef534f"/>
+
+                            <TextView
+                                android:fontFamily="@font/custom_poppins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Midterm Accomplishment: "
+                                android:textSize="10sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/midtermIndicator"
+                                android:id="@+id/midCountTv"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_below="@+id/midL"
+                            android:id="@+id/finL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/midtermIndicator"
+                                android:id="@+id/finalsIndicator"
+                                android:background="#ef534f"/>
+
+
+
+                            <TextView
+                                android:fontFamily="@font/custom_poppins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Finals Accomplishment: "
+                                android:textSize="10sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/finalsIndicator"
+                                android:id="@+id/finCountTv"/>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/actCount"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="12sp"
+                        android:layout_toRightOf="@+id/preCountTv"
+                        android:id="@+id/preCount"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/preCount"
+                        android:layout_toRightOf="@+id/midCountTv"
+                        android:id="@+id/midCount"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/midCount"
+                        android:layout_toRightOf="@+id/midCountTv"
+                        android:id="@+id/finCount"/>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/actCount"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_scores"
+                        app:backgroundTint="@null"
+                        android:layout_toLeftOf="@+id/average_scores"
+                        android:padding="5dp"
+                        android:background="@drawable/custom_write"
+                        android:layout_marginRight="10dp"
+                        android:text="Edit \nScores"
+                        android:src="@drawable/ic_edit"/>
+
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/average_scores"
+                        app:backgroundTint="@null"
+                        android:padding="5dp"
+                        android:background="@drawable/custom_view"
+                        android:layout_marginRight="10dp"
+                        android:text="Viewaverage"
+                        android:src="@drawable/average_ic"/>
+
+
+                    <ImageButton
+                        android:id="@+id/remove_student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_trash"
+                        android:layout_toRightOf="@+id/average_scores"
+                        android:padding="5dp"
+                        app:backgroundTint="@null"
+                        android:src="@drawable/ic_trash"/>
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

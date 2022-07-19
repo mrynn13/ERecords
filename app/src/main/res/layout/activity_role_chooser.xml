@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RoleChooser">
+
+    <TextView
+        android:layout_width="190dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Choose your role"
+        android:padding="10dp"
+        android:fontFamily="@font/custom_poppins"
+        android:textStyle="bold"
+        android:textColor="#3d0000"
+        android:id="@+id/roletv"/>
+    <RelativeLayout
+        android:layout_below="@+id/roletv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thin_bg_v3"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            android:onClick="ClickTeacher"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/custom_poppins"
+            android:background="@drawable/bg_btn_v1"
+            android:id="@+id/teacher_btn"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teacher_btn"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:onClick="ClickStudent"
+            android:fontFamily="@font/custom_poppins"
+            android:background="@drawable/bg_btn_v2"
+            android:text="Student"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

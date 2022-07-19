@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_thin"
+        android:layout_below="@+id/subject_img_container"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/title_holder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Records"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:id="@+id/logo_tv"
+                android:background="@drawable/red_bg"
+                android:fontFamily="@font/custom_poppins"
+                android:padding="10dp"
+                android:elevation="3dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/classname_notify"
+                android:textSize="15sp"
+                android:elevation="1dp"
+                android:fontFamily="@font/custom_poppins"
+                android:textColor="#2e4c6d"
+                android:text="Application Development And Emerging Technologies"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message here..."
+            android:layout_marginTop="10dp"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            android:layout_below="@+id/title_holder"
+            android:id="@+id/message_notify_et"
+            android:background="@drawable/shadow"
+            android:fontFamily="@font/custom_poppins"
+            android:padding="10dp"
+            android:elevation="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/message_notify_et"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_notify_btn"
+                android:background="@drawable/custom_btn_bg_thin_cancel"
+                android:textColor="#d32f2f"
+                android:textStyle="bold"
+                android:fontFamily="@font/custom_poppins"
+                app:backgroundTint="@null"
+                android:text="Cancel" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/notify_btn"
+                android:background="@drawable/custom_btn_bg_thin_save"
+                app:backgroundTint="@null"
+                android:textColor="#00c853"
+                android:fontFamily="@font/custom_poppins"
+                android:textStyle="bold"
+                android:text="Notify"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
